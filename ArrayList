@@ -1,0 +1,60 @@
+package demo02List;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListDemo {
+	//ArrayList= Here we can store different types value of DataTypes, we don't check Datatypes
+    //           =Here we can add all objects
+	//ArrayList is dynamic in size.
+	//ArrayList is a variable-length data structure. It can be resized itself when needed.
+	//We can create an instance of ArrayList without specifying its size. Java creates ArrayList of default size.
+	
+	public static void main(String[] args) {
+		
+		List<String>Name= new ArrayList<String>();
+		Name.add("Tamal ");
+		Name.add("Debanjan ");
+		Name.add("Shubham ");
+		System.out.println(Name);
+
+		System.out.println("***********");
+		
+		List<String>Number= new ArrayList<String>();
+		Number.add("100");
+		Number.add("110");
+		Number.add("120");
+		System.out.println(Number);
+		
+		
+		System.out.println("*********************");
+		
+		List<String>Name2= new ArrayList<String>();
+		Name2.add("Tamal ");
+		Name2.add("Arnab ");
+		Name2.add("Arittam ");
+		System.out.println(Name2);
+		
+		
+		//ArrayList(Collection C)= List
+		List<String>allStudents = new ArrayList<String>(Name);
+		allStudents.addAll(Name2);
+		System.out.println(allStudents);
+		
+		//To check methods,
+		System.out.println(allStudents.contains("Arnab "));
+		
+		//To remove methods,
+		if(allStudents.contains("Arittam"))	{
+			allStudents.remove("Arittam");
+		}
+		
+		System.out.println(allStudents);
+		System.out.println(allStudents.get(3));// To get a element in a particular index
+		System.out.println(allStudents.size());// To get the size of the List
+		allStudents.clear();
+		System.out.println(allStudents.size());
+		
+	}
+
+}
