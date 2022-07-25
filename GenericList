@@ -1,0 +1,29 @@
+package demo02List;
+
+import java.util.ArrayList;
+import java.util.List;
+
+import demo01CollectionFrameNeed.Product;
+ 
+public class GenericListsDemo {
+     //ArrayList= Here we can store different types value of DataTypes, we don't check Datatypes
+	 //           =Here we can add all objects
+	 
+	
+	public static void main(String[] args) {
+		//Collection Interface= Ctrl + Shift + T,
+        //List interface= Objects arranged in a sequence,
+		System.out.println("Aritra is here");
+		List marks= new ArrayList();
+		marks.add(1);
+		marks.add("Jay");
+		marks.add(new Product("Watch",1200,true));
+		
+		System.out.println(marks); // Here we are printing the value
+		
+		int i= (Integer)marks.get(0); //Here DownCasting is done as we going from
+		System.out.println(i);
+		String n=(String)marks.get(1); // Downcasting 
+		System.out.println(n);
+		
+	}
