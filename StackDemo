@@ -1,0 +1,31 @@
+package demo02List;
+
+import java.util.Stack;
+
+public class StackDemo {
+
+	public static void main(String[] args) {
+		
+		Stack<String> names= new Stack<String>(); //Declaration of Stack,
+		 names.push("Raju");
+		 names.push("Amitav");
+		 names.push("Niteish");
+		System.out.println(names);
+		
+		
+		String removedElement= names.pop();
+		// pop() method is used to remove certain element, 
+		//Pop () will work from the buttom,
+		System.out.println(removedElement);
+		System.out.println(names);
+		
+		
+		String retrievedElement= names.peek();
+		// peek() method is used to retrieve certain element, 
+		//In Peek () there will be no change,
+		System.out.println(retrievedElement);
+		System.out.println(names);
+		
+	}
+
+}
