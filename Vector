@@ -1,0 +1,59 @@
+package demo02List;
+
+import java.util.List;
+import java.util.Vector;
+
+public class VectorDemo {
+
+	public static void main(String[] args) {
+		
+		//ArrayList,LinkedList,Vector
+		// Above 3 classes access the methods in the same way
+		
+		List<String>Name= new Vector<String>();
+		Name.add("Tamal ");
+		Name.add("Debanjan ");
+		Name.add("Arnab ");
+		System.out.println(Name);
+
+		System.out.println("***********");
+		
+		List<String>Number= new Vector<String>();
+		Number.add("100");
+		Number.add("110");
+		Number.add("120");
+		System.out.println(Number);
+		
+		
+		System.out.println("*********************");
+		
+		List<String>Name2= new Vector<String>();
+		Name2.add("Tamal ");
+		Name2.add("Arnab ");
+		Name2.add("Arittam ");
+		System.out.println(Name2);
+		
+		
+		//ArrayList(Collection C)= List
+		List<String>allStudents = new Vector<String>(Name);
+		allStudents.addAll(Name2); // This is used to add Name & Name2,
+		System.out.println(allStudents);
+		
+		//To check methods,
+		System.out.println(allStudents.contains("Arnab "));
+		
+		//To remove methods,
+		if(allStudents.contains("Arittam"))	{
+			allStudents.remove("Arittam");
+		}
+		
+		System.out.println(allStudents);
+		System.out.println(allStudents.get(3));// To get a element in a particular index
+		System.out.println(allStudents.size());// To get the size of the List
+		allStudents.clear();
+		System.out.println(allStudents.size());
+		
+
+	}
+
+}
