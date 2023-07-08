@@ -1,3 +1,70 @@
+ArrayList ==>
+
+-ArrayList belong to "List" interface ,
+-ArrayList store large volume of Data of both Homogeneous & Heterogenous type; Heterogeneous data will be stored as Object
+-It follows Dynamic Array Data Structure;
+-Indexed based accessing is allowed;
+-Duplicates are allowed;
+-in Collection , whatever we add, it will be add as Object , called as AutoBoxing,
+-Efficient in insertion & deletion in Rear ends;
+-We can perform operation using inbuild method( ),
+
+
+
+
+
+import java.util.ArrayList;
+public class LaunchALIM {
+
+	public static void main(String[] args) {
+		
+		ArrayList al4=new ArrayList();
+		
+		al4.add(11);
+		al4.add(22);
+		al4.add(33);
+		al4.add(44);
+		System.out.println("Here is the list"+al4);
+		
+		//Checking whether contains or not
+		System.out.println(al4.contains(44));
+		
+		
+		//print index
+		System.out.println(al4.indexOf(11));
+		System.out.println(al4.indexOf(33));
+		
+		
+		//Check empty or not
+		System.out.println(al4.isEmpty()); 
+		
+	     //Size & Capacity-->
+        //Capacity = how much you can have it,
+	//Size  =  how much you have already utilized it
+
+	al4.ensureCapacity(10);
+        System.out.println("size of array is ::"+al4.size());
+        
+        //trimtoSize method
+        al4.trimToSize();
+        
+        //get class method
+        System.out.println("get class method is ::"+al4.getClass());
+        
+        //clear method
+        al4.clear();
+        System.out.println( al4 );
+        System.out.println("Size of al4 is ::"+al4.size());
+        
+	}
+
+}
+
+
+
+
+
+
 package demo02List;
 
 import java.util.ArrayList;
@@ -58,3 +125,92 @@ public class ArrayListDemo {
 	}
 
 }
+
+
+LinkedList==>
+-It follows Doubly LinkedList Data Structure using Nodes & Links with previous Node & next Node, 
+-Efficient to perform Insertion at any given position,
+-We can add one entire collection into another collection,
+-It stores Data as Object,
+-It implements two Interface - List(I) , Deque(I),
+-
+-
+
+
+Code-01==
+
+
+//LinkedList Full Concept
+import java.util.*;
+
+public class LaunchLL {
+
+	public static void main(String[] args) {
+		
+		LinkedList ll1=new LinkedList();
+		
+		ll1.add(11);
+		ll1.add(22);
+		ll1.add(33);
+		ll1.add(44);
+		System.out.println("Here is the list"+ll1);
+		
+		//in build method= addFirst
+		
+		ll1.addFirst("Hyder Abbas");
+		System.out.println(ll1);
+		
+		
+		
+		//Index based insertion
+		
+		ll1.add(3, "Bengaluru");
+		System.out.println(ll1);
+		
+		ll1.addLast(" RichMond Town");
+		System.out.println(ll1);
+		
+		LinkedList ll2=new LinkedList();
+		ll2.add(10);
+		ll2.add(20);
+		ll2.add(30);
+		ll2.add(40);
+		ll2.add(20);
+		
+		
+		System.out.println(ll2.getFirst());
+		System.out.println(ll2.indexOf(20));
+		System.out.println(ll2.lastIndexOf(20));
+		
+		ll2.offerFirst(5);
+		ll2.offerLast(55);
+		System.out.println(ll2);
+		
+		
+		
+		
+		
+		
+
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
