@@ -1,3 +1,97 @@
+LinkedList==>
+-It follows Doubly LinkedList Data Structure using Nodes & Links with previous Node & next Node, 
+-Efficient to perform Insertion at any given position,
+-We can add one entire collection into another collection,
+-It stores Data as Object,
+-It implements two Interface - List(I) , Deque(I),
+-
+-
+
+
+Code-01==
+
+
+//LinkedList Full Concept
+import java.util.*;
+
+public class LaunchLL {
+
+	public static void main(String[] args) {
+		
+		LinkedList ll1=new LinkedList();
+		
+		ll1.add(11);
+		ll1.add(22);
+		ll1.add(33);
+		ll1.add(44);
+		System.out.println("Here is the list"+ll1);
+		
+		//in build method= addFirst
+		
+		ll1.addFirst("Hyder Abbas");
+		System.out.println(ll1);
+		
+		
+		
+		//Index based insertion
+		
+		ll1.add(3, "Bengaluru");
+		System.out.println(ll1);
+		
+		ll1.addLast(" RichMond Town");
+		System.out.println(ll1);
+		
+		LinkedList ll2=new LinkedList();
+		ll2.add(10);
+		ll2.add(20);
+		ll2.add(30);
+		ll2.add(40);
+		ll2.add(20);
+		
+		
+		System.out.println(ll2.getFirst());
+		System.out.println(ll2.indexOf(20));
+		System.out.println(ll2.lastIndexOf(20));
+
+/*Difference between add & offer=
+*  add( )= it is used to add must,
+* offer()=there is option, you can add the data or not,
+*
+*
+*
+*
+*/
+
+
+
+		ll2.offerFirst(5);
+		ll2.offerLast(55);
+		System.out.println(ll2);
+		
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 package demo02List;
 
 
