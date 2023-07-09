@@ -1,0 +1,10 @@
+ArrayDeque
+==============
+-It follows Double Ended Queue Data Structure,
+-Index based accessing is not allowed,
+
+
+Double Ended Queue
+====================
+-A double-ended queue, also known as a deque (pronounced "deck"), is a data structure that allows insertion and removal of elements from both ends(i.e Front end & Rear end    ). 
+-It combines the features of a stack and a queue, providing flexibility and efficiency in certain applications.
